@@ -93,7 +93,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background-Bubbles" translatesAutoresizingMaskIntoConstraints="NO" id="ZGM-7m-Yru">
-                                <rect key="frame" x="0.0" y="692" width="414" height="204"/>
+                                <rect key="frame" x="0.0" y="794" width="414" height="102"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="b59-Ht-lLj">
                                 <rect key="frame" x="40" y="84" width="334" height="370"/>
@@ -286,9 +286,12 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="zUA-7v-n8g"/>
                                         </constraints>
-                                        <state key="normal" title="facts">
+                                        <state key="normal" title="Holidays">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="JIC-JY-Xhg" kind="show" id="TT9-D6-yuC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -337,7 +340,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wld-G2-g1Z" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3240.579710144928" y="84.375"/>
+            <point key="canvasLocation" x="3183" y="65"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="FKq-mu-lQo">
@@ -518,6 +521,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Swr-BP-9B7" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5757.971014492754" y="22.767857142857142"/>
+        </scene>
+        <!--Holidays Table View Controller-->
+        <scene sceneID="bUA-ec-Tqu">
+            <objects>
+                <tableViewController modalPresentationStyle="fullScreen" id="JIC-JY-Xhg" customClass="HolidaysTableViewController" customModule="API" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="8UV-Yg-gwl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="Qd3-Np-mAs" detailTextLabel="oeY-7F-Xoc" style="IBUITableViewCellStyleSubtitle" id="Ihu-9P-woK">
+                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ihu-9P-woK" id="tNw-is-FTo">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qd3-Np-mAs">
+                                            <rect key="frame" x="20" y="10" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oeY-7F-Xoc">
+                                            <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JIC-JY-Xhg" id="UT6-n3-Tp7"/>
+                            <outlet property="delegate" destination="JIC-JY-Xhg" id="EiG-DP-XyR"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="7m2-ZP-1zC"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gd2-RU-MRd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3248" y="737"/>
         </scene>
     </scenes>
     <resources>

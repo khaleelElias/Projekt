@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0CF97D16B2A98DB6FCD85264 /* Pods_school_project_school_projectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E249A60735960991848D53D6 /* Pods_school_project_school_projectUITests.framework */; };
+		3F57F47E238C5F3300D487FE /* HolidaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F57F47B238C5F3300D487FE /* HolidaysTableViewController.swift */; };
+		3F57F47F238C5F3300D487FE /* HolidayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F57F47C238C5F3300D487FE /* HolidayRequest.swift */; };
+		3F57F480238C5F3300D487FE /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F57F47D238C5F3300D487FE /* Holiday.swift */; };
 		7734D4FC238BF68F007B5A09 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7734D4FB238BF68F007B5A09 /* EndViewController.swift */; };
 		774D16642381CBA900D20E39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 774D16632381CBA900D20E39 /* GoogleService-Info.plist */; };
 		77BF48F2238195870096E17B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF48F1238195870096E17B /* AppDelegate.swift */; };
@@ -48,6 +51,9 @@
 /* Begin PBXFileReference section */
 		060CC7D3A5FCE3C77F660DE1 /* Pods-school project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-school project.release.xcconfig"; path = "Target Support Files/Pods-school project/Pods-school project.release.xcconfig"; sourceTree = "<group>"; };
 		3D217CC9A9CC74A0081BD609 /* Pods-school project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-school project.debug.xcconfig"; path = "Target Support Files/Pods-school project/Pods-school project.debug.xcconfig"; sourceTree = "<group>"; };
+		3F57F47B238C5F3300D487FE /* HolidaysTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HolidaysTableViewController.swift; path = ../../API/API/HolidaysTableViewController.swift; sourceTree = "<group>"; };
+		3F57F47C238C5F3300D487FE /* HolidayRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HolidayRequest.swift; path = ../../API/API/HolidayRequest.swift; sourceTree = "<group>"; };
+		3F57F47D238C5F3300D487FE /* Holiday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Holiday.swift; path = ../../API/API/Holiday.swift; sourceTree = "<group>"; };
 		46CFAD30D2F542629DCDFED7 /* Pods_school_projectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_school_projectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4AC97EB3BA115C336FB9A0 /* Pods_school_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_school_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7734D4FB238BF68F007B5A09 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +152,9 @@
 				77BF48F1238195870096E17B /* AppDelegate.swift */,
 				774D16632381CBA900D20E39 /* GoogleService-Info.plist */,
 				77BF492923819EC80096E17B /* Utilities.swift */,
+				3F57F47D238C5F3300D487FE /* Holiday.swift */,
+				3F57F47C238C5F3300D487FE /* HolidayRequest.swift */,
+				3F57F47B238C5F3300D487FE /* HolidaysTableViewController.swift */,
 				77BF48F3238195870096E17B /* SceneDelegate.swift */,
 				77BF492B23819F550096E17B /* Constants.swift */,
 				77BF48F5238195870096E17B /* ViewController.swift */,
@@ -446,9 +455,12 @@
 				77BF49232381971E0096E17B /* SignUpViewController.swift in Sources */,
 				77BF49252381972E0096E17B /* LogInViewController.swift in Sources */,
 				77BF48F4238195870096E17B /* SceneDelegate.swift in Sources */,
+				3F57F47F238C5F3300D487FE /* HolidayRequest.swift in Sources */,
 				7734D4FC238BF68F007B5A09 /* EndViewController.swift in Sources */,
+				3F57F47E238C5F3300D487FE /* HolidaysTableViewController.swift in Sources */,
 				77D0FCF02382D50700D24B65 /* QuizViewController.swift in Sources */,
 				77BF49272381973E0096E17B /* HomeViewController.swift in Sources */,
+				3F57F480238C5F3300D487FE /* Holiday.swift in Sources */,
 				77BF492C23819F550096E17B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
