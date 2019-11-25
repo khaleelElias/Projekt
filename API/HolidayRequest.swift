@@ -19,6 +19,7 @@ struct HolidayRequest {
     
 var resourceURL: URL
     
+//my API key
 let API_KEY = "94ffa6444ff25d17d5e7b2bd66e279b564ef2fb9"
     
     init(countryCode : String) {

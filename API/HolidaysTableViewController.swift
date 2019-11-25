@@ -23,6 +23,7 @@ class HolidaysTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //req
         let holidayRequest = HolidayRequest(countryCode: "Se")
         holidayRequest.getHolidays { [weak self] result in
             switch result {

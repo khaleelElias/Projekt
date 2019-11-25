@@ -22,6 +22,7 @@ struct Holidays: Decodable {
     var holidays: [HolidayDetails]
 }
 
+//sotrage of name and date
 struct HolidayDetails: Decodable {
     var name: String
     var date: DateInfo
